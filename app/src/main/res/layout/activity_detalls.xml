@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activity que es mostra al clicar una targeta-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imatge del cotxe (es carrega amb Glide des de l'Intent) -->
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="364dp"
+            android:contentDescription="Imatge detall"
+            android:scaleType="centerInside" />
+
+        <!-- Marca i Model del cotxe -->
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:paddingTop="10dp"
+            android:text="Nom"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Preu -->
+        <TextView
+            android:id="@+id/tvDetailPrice"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingTop="6dp"
+            android:text="Preu"
+            android:textSize="18sp" />
+
+        <!-- Any i quilometratge -->
+        <TextView
+            android:id="@+id/tvDetailYearKm"
+            android:text="Any i km"
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <!-- Descripció del cotxe -->
+        <TextView
+            android:id="@+id/tvDetailDescription"
+            android:text="Descripció..."
+            android:textSize="16sp"
+            android:paddingTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout principal: títol de la pantalla i RecyclerView que mostrarà les targetes -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Títol de l'app -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="CotxesLegendaris.cat"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Contenidor recyclerview on surtiran les targetes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCarsContenidor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
